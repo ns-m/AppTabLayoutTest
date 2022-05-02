@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">AppTabLayoutTest</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="blank_fragment_monday">Fragment Monday</string>
+    <string name="blank_fragment_tuesday">Fragment tuesday</string>
+    <string name="blank_fragment_wednesday">Fragment wednesday</string>
+    <string name="blank_fragment_thursday">Fragment thursday</string>
+    <string name="blank_fragment_friday">Fragment friday</string>
 </resources>
