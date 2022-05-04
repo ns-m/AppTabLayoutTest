@@ -3,11 +3,13 @@ package com.example.apptablayouttest
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.activity.viewModels
 import com.example.apptablayouttest.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {
+    private val model: MainViewModel by viewModels()
     private lateinit var binding: ActivityMainBinding
     private val fragList = listOf(FragmentMonday.newInstance(), FragmentTuesday.newInstance(),
         FragmentWednesday.newInstance(), FragmentThursday.newInstance(), FragmentFriday.newInstance())
