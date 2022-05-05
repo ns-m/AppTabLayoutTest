@@ -11,9 +11,11 @@ import com.google.android.material.tabs.TabLayoutMediator
 class MainActivity : AppCompatActivity() {
     private val model: MainViewModel by viewModels()
     private lateinit var binding: ActivityMainBinding
-    private val fragList = listOf(FragmentMonday.newInstance(), FragmentTuesday.newInstance(),
+    /*private val fragList = listOf(FragmentMonday.newInstance(), FragmentTuesday.newInstance(),
         FragmentWednesday.newInstance(), FragmentThursday.newInstance(), FragmentFriday.newInstance())
-    private val fragListTitle = listOf("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+    private val fragListTitle = listOf("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")*/
+    /*private val fragList = listOf(FragmentDescription.newInstance(), FragmentCharacteristics.newInstance())
+    private val fragListTitle = listOf("Description", "Characteristics")*/
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -21,22 +23,15 @@ class MainActivity : AppCompatActivity() {
         /*binding.tabLayoutWeek.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener{
             override fun onTabSelected(tab: TabLayout.Tab?) {
 //                Toast.makeText(this@MainActivity, "Tab selected: ${tab?.text}", Toast.LENGTH_SHORT).show()
-                supportFragmentManager.beginTransaction().replace(R.id.placeHolder, fragList[tab?.position!!]).commit()
-            }
-
-            override fun onTabUnselected(tab: TabLayout.Tab?) {
-
-            }
-
-            override fun onTabReselected(tab: TabLayout.Tab?) {
-
-            }
-
+                supportFragmentManager.beginTransaction().replace(R.id.placeHolder, fragList[tab?.position!!]).commit()}
+            override fun onTabUnselected(tab: TabLayout.Tab?) {            }
+            override fun onTabReselected(tab: TabLayout.Tab?) {            }
         })*/
-        val adapter = ViewPagerAdapter(this, fragList)
+        /*val adapter = ViewPagerAdapter(this, fragList)
         binding.viewPager2.adapter = adapter
         TabLayoutMediator(binding.tabLayoutWeek, binding.viewPager2){
             tab, pos -> tab.text = fragListTitle[pos]
-        }.attach()
+        }.attach()*/
+        supportFragmentManager.beginTransaction().replace(R.id.placeHolder, MainFragment.newInstance()).commit()
     }
 }

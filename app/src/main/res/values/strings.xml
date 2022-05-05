@@ -5,10 +5,16 @@
     <string name="wednesday">Wednesday</string>
     <string name="thursday">Thursday</string>
     <string name="friday">Friday</string>
+    <string name="yellow_star">Yellow Star</string>
+    <string name="blank_fragment_chrctr">Star Characteristics</string>
+    <string name="chrctr">Characteristics</string>
+    <string name="blank_fragment_descr">Star Description</string>
+    <string name="descr">Description</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="blank_fragment_monday">Fragment Monday</string>
     <string name="blank_fragment_tuesday">Fragment tuesday</string>
     <string name="blank_fragment_wednesday">Fragment wednesday</string>
     <string name="blank_fragment_thursday">Fragment thursday</string>
     <string name="blank_fragment_friday">Fragment friday</string>
+    <string name="todo">TODO</string>
 </resources>
